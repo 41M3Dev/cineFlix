@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+  <header>
+    <nav
+            class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body"
+            data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">CinéFlix</a>
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="col-4"></div>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 col-4">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html"
+              >Accueil</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="film.html">Film</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="nouveautes.html">Nouveautés</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+              >
+                Genre
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="fantastique.html"
+                  >Fantastique</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="action.html">Action</a>
+                </li>
+                <li><a class="dropdown-item" href="drole.html">Drôle</a></li>
+                <li>
+                  <a class="dropdown-item" href="horreur.html">Horreur</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+            />
+            <button class="btn btn btn-danger" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+      <!--fin container-->
+    </nav>
+  </header>
+
+  <main>
+    <div class="container-fluid">
+      <img src="Images/gladiator.jpg" alt="gladiateurs">
+    </div>
+
+
+
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md text-center">
+          <img src="https://m.media-amazon.com/images/I/61MgGe-kA+S._AC_UF1000,1000_QL80_.jpg" alt="affiche film gladiator">
+        </div>
+
+
+        <div class="col">
+          <h1>Gladiator</h1>
+          <p>2000</p>
+          <h2>Notes</h2>
+          <div class="note-site">
+            <div>
+              <h3>AloCiné</h3>
+              <p>4,6</p>
+            </div>
+            <div>
+              <h3>SensCritique</h3>
+              <p>3,8</p>
+            </div>
+            <div>
+              <h3>Cinéflix</h3>
+              <p>4,3</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+        </div>
+
+        <div data-aos="fade-right" class="container text-center">
+          <div class="row">
+            <div class="col description">
+                <div>
+                  <p>
+                    Film de Ridley Scott · 2 h 35 min · 20 juin 2000 (France)
+                  </p>
+                  <p>
+                    <span>Genres</span> : Péplum, Aventure, Drame
+                  </p>
+                  <p>
+                    <span>Pays</span> d'origine : États-Unis, Royaume-Uni
+                  </p>
+                  <p>
+                    <span>Bande originale</span> : Gladiator: Music From the Motion Picture
+                  </p>
+                  <p>
+                    En 180 après Jésus Christ, le général romain Maximus est le plus fidèle soutien de l'empereur Marc Aurèle. Jaloux du prestige de Maximus, le fils de Marc Aurèle, Commode, s'arroge brutalement le pouvoir, puis ordonne l'arrestation du général et son exécution. Maximus échappe à ses assassins mais ne peut empêcher le massacre de sa famille. Capturé par un marchand d'esclaves, il devient gladiateur et prépare sa vengeance.
+                  </p>
+                </div>
+            </div>
+
+
+            <div class="col carousel-1">
+              <h2>Casting</h2>
+              <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active carousel-casting" data-bs-interval="10000">
+                    <div>
+                      <img src="Images/russel_crowe.jpg" class="d-block w-100" alt="Russel CROWE">
+                      <p><span>Russel CROWE</span></p>
+                      <p>Maximus</p>
+                    </div>
+                    <div>
+                      <img src="Images/joachim_phoenix.jpg" class="d-block w-100" alt="Joachim PHOENIX">
+                      <p><span>Joachim PHOENIX</span></p>
+                      <p>Commode</p>
+                    </div>
+                  </div>
+
+
+                  <div class="carousel-item  carousel-casting" data-bs-interval="10000">
+                    <div>
+                      <img src="Images/derek_jacobi.jpg" class="d-block w-100" alt="Derek JACOBI">
+                      <p><span>Derek JACOBI</span></p>
+                      <p>Gracchus</p>
+                    </div>
+                    <div>
+                      <img src="Images/djimoun_hounsou.jpg" class="d-block w-100" alt="Djimoun HOUNSOU">
+                      <p><span>Djimoun HOUNSOU</span></p>
+                      <p>Juba</p>
+                    </div>
+                  </div>
+
+
+                  <div class="carousel-item  carousel-casting" data-bs-interval="10000">
+                    <div>
+                      <img src="Images/connie_nielson.jpg" class="d-block w-100" alt="Connie NIELSON">
+                      <p><span>Connie NIELSON</span></p>
+                      <p>Lucillia</p>
+                    </div>
+                    <div>
+                      <img src="Images/david_schofield.jpg" class="d-block w-100" alt="Davis SCHODIELD">
+                      <p><span>Davis SCHODIELD</span></p>
+                      <p>Falco</p>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item  carousel-casting" data-bs-interval="10000">
+                    <div>
+                      <img src="Images/oliver_reed.jpg" class="d-block w-100" alt="Oliver REED">
+                      <p><span>Oliver REED</span></p>
+                      <p>Proximo</p>
+                    </div>
+                    <div>
+                      <img src="Images/john_schrapnel.jpg" class="d-block w-100" alt="John SCHRAPNEL">
+                      <p><span>John SCHRAPNEL</span></p>
+                      <p>Gaius</p>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item  carousel-casting" data-bs-interval="10000">
+                    <div>
+                      <img src="Images/richard_harris.jpg" class="d-block w-100" alt="Richard HARRIS">
+                      <p><span>Richard HARRIS</span></p>
+                      <p>Marc Aurèle</p>
+                    </div>
+                    <div>
+                      <img src="Images/tomas_arena.jpg" class="d-block w-100" alt="Tomas ARANA">
+                      <p><span>Tomas ARANA</span></p>
+                      <p>Quintus</p>
+                    </div>
+                  </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div> <!-------- Fin Carousel--------->
+          </div>
+        </div><!-------Fin section 2-------->
+
+        <div data-aos="zoom-in" class="container text-center image-film">
+          <div class="row">
+            <div class="col">
+              <h2>Bande Annonce</h2>
+              <iframe width="100%" height="500px" src="https://www.youtube.com/embed/P5ieIbInFpg?si=mJP_S94-ePLKvBpX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div data-aos="zoom-in-left" class="container text-center comentary">
+          <div class="row">
+            <div class="col">
+              <h2>Commentaires</h2>
+              <div class="commentaire">
+                <h4>Épopée émouvante et captivante</h4>
+                <br />
+                <p>Gladiator est un chef-d'œuvre qui mêle action, drame et histoire de manière magistrale. La performance de Russell Crowe en tant que Maximus est bouleversante, donnant vie à un héros tragique qui lutte pour l'honneur et la justice. Les scènes de combat dans l’arène sont époustouflantes, tout comme la bande originale de Hans Zimmer, qui renforce l’intensité émotionnelle. C'est un film inoubliable qui reste gravé dans les mémoires.</p>
+                <br />
+                <p>4/5 <img src="Images/etoile.png" alt="etoile"></p>
+                <p class="pseudal">Robert (Back to Pixel)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div data-aos="zoom-in-right" class="container text-center comentary-2">
+          <div class="row">
+            <div class="col">
+              <div class="commentaire">
+                <h4>Un spectacle visuel grandiose</h4>
+                <br />
+                <p>Ridley Scott réussit à recréer l'Empire romain avec un souci impressionnant du détail. Les décors, les costumes et les effets visuels plongent les spectateurs dans une époque fascinante. Chaque scène est magnifiquement filmée, des champs de bataille aux arènes sanglantes, offrant un véritable spectacle épique qui ne laisse aucun répit.</p>
+                <br />
+                <p>5/5 <img src="Images/etoile.png" alt="etoile"></p>
+                <p class="pseudal">Emmanuel (Need For School)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div data-aos="zoom-in-left" class="container text-center comentary-3">
+          <div class="row">
+            <div class="col">
+              <div class="commentaire">
+                <h4>Une réflexion sur le pouvoir et la vengeance</h4>
+                <br />
+                <p>Au-delà des batailles spectaculaires, Gladiator explore des thèmes profonds comme la corruption, la quête de liberté et les limites du pouvoir. L'opposition entre Maximus et Commode (Joaquin Phoenix) est marquante, incarnant la lutte entre l’intégrité et la tyrannie. C'est une histoire universelle qui résonne encore aujourd'hui.</p>
+                <br />
+                <p>4/5 <img src="Images/etoile.png" alt="etoile"></p>
+                <p class="pseudal">Arnaud (Arnaudcom)</p>
+              </div>
+            </div>
+          </div>
+        </div><!--------- Fin Commantary ------------->
+
+        <div data-aos="zoom-out-up" class="container text-center formulaire">
+          <div class="row">
+            <div class="col">
+              <h4>Laissez un commentaire au film</h4>
+              <form action="">
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Nom</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Tituan">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Commentaire</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+
+
+                <p>Laissez une note</p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <label class="form-check-label" for="inlineRadio1">0</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">0.5</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                  <label class="form-check-label" for="inlineRadio3">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                  <label class="form-check-label" for="inlineRadio3">1.5</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                  <label class="form-check-label" for="inlineRadio3">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                  <label class="form-check-label" for="inlineRadio3">2.5</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                  <label class="form-check-label" for="inlineRadio3">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                  <label class="form-check-label" for="inlineRadio3">3.5</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                  <label class="form-check-label" for="inlineRadio3">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                  <label class="form-check-label" for="inlineRadio3">4.5</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                  <label class="form-check-label" for="inlineRadio3">5</label>
+                </div>
+
+                <div>
+                  <button class="btn btn-primary" type="submit">Soumettre</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="example-1">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>Contact :</h4>
+        <br />
+        <p>
+          <a
+                  class="hover-footer"
+                  href="mailto:email@example.com?subject=Enquiry&body=Hello, I have a question"
+          >Email
+          </a>
+        </p>
+        <p>
+          Numéro:
+          <a class="hover-footer" href="tel:+1234567890">06 90 65 22</a>
+        </p>
+        <p>
+          <a
+                  class="hover-footer"
+                  href="https://wa.me/1234567890?text=Hello,%20I%20have%20a%20question"
+          >Contact WhatsApp</a
+          >
+        </p>
+        <p>
+          <a class="hover-footer" href="https://fr-fr.facebook.com/"
+          >Réseau Facebook</a
+          >
+        </p>
+        <p>
+          <a class="hover-footer" href="https://www.instagram.com/"
+          >Réseau Instagram</a
+          >
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Sitemap :</h4>
+        <br />
+        <nav>
+          <ul>
+            <li>
+              <a class="hover-footer" href="../index.html">Page d'acceuil</a>
+            </li>
+            <br />
+            <li>
+              <a class="hover-footer" href="film.html">Liste des films</a>
+            </li>
+            <br />
+            <li>
+              <a class="hover-footer" href="genres.html">Genres de films</a>
+            </li>
+            <br />
+            <li><a class="hover-footer" href="hahaha.html">Nouveautés</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="bottombar">
+      Copyright © 2024 CinéFlix. <a href="legales.html">mentions-legales</a>
+    </div>
+  </footer>
+
+
+  <!---------------------------------- Tu touche je te bouffe --------------------------------------------------------------------------->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
