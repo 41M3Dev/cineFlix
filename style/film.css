@@ -1,0 +1,14 @@
+body, .card{
+    background-color:#2f2f2f;
+}
+.card{
+    border: none;
+}
+#fantas,#action,#horreur,#drole{
+    text-align: center;
+    font-size: 3.5rem;
+    color: #C70039;
+}
+.card:hover{
+    scale: 1;
+}

@@ -2,6 +2,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+            name="description"
+            content="Cinéflix votre destination ultime pour découvrir les meilleurs
+            films, tout en restant à la pointe des nouveautés cinématographiques."
+    />
+
+    <meta
+            property="og:description"
+            content="Cinéflix votre destination ultime pour découvrir les meilleurs
+            films, tout en restant à la pointe des nouveautés cinématographiques."
+    />
+    <meta property="og:url" content="https://example.com" />
+    <meta property="og:type" content="Film" />
+    <meta property="og:site_name" content="Cinéflix" />
+    <meta name="robots" content="index">
+
     <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -13,10 +29,12 @@
       crossorigin="anonymous"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" href="../img/logo.png">
 
-    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/film.css" />
+    <link rel="stylesheet" href="../style/new.css">
 
-    <title>CinéFlix</title>
+    <title>CinéFlix | Film</title>
   </head>
   <body>
     <header>
@@ -50,33 +68,12 @@
               <li class="nav-item">
                 <a class="nav-link" href="nouveautes.html">Nouveautés</a>
               </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Genre
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="fantastique.html">Fantastique</a></li>
-                  <li><a class="dropdown-item" href="action.html">Action</a></li>
-                  <li><a class="dropdown-item" href="drole.html">Drôle</a></li>
-                  <li><a class="dropdown-item" href="horreur.html">Horreur</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="genres.html">Genres</a>
               </li>
+
             </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn btn-danger" type="submit">Search</button>
-            </form>
+
           </div>
         </div>
         <!--fin container-->
@@ -86,18 +83,17 @@
       <!--container-->
       <div class="container-fluid">
         <!--row-->
-        <h2 class="animate__animated animate__backInRight" id="fantas">Fantastique</h2>
         <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
           <!--col-->
           <div
-            data-aos="fade-up"
+            data-aos="zoom-in"
             class="col col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-12"
           >
             <div class="p-3">
               <div class="card">
-                <img src="../img/hp.jpg" class="card-img-top" alt="..." />
+                <img src="../img/affgladia.jpg" class="card-img-top" alt="affiche gladiateur" />
                 <div class="card-body">
-                  <a href="#" class="btn btn-primary">Voir plus</a>
+                  <a href="gladiadetail.html" class="btn btn-primary">Voir plus</a>
                 </div>
               </div>
             </div>
@@ -105,14 +101,14 @@
           <!--fin col-->
           <!--col-->
           <div
-            data-aos="fade-up"
+            data-aos="zoom-in"
             class="col col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-12"
           >
             <div class="p-3">
               <div class="card">
-                <img src="../img/hpDeux.jpg" class="card-img-top" alt="..." />
+                <img src="../img/premier_contact.png" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <a href="#" class="btn btn-primary">Voir plus</a>
+                  <a href="gladiadetail.html" class="btn btn-primary">Voir plus</a>
                 </div>
               </div>
             </div>
@@ -120,14 +116,14 @@
           <!--fin col-->
           <!--col-->
           <div
-            data-aos="fade-up"
+            data-aos="zoom-in"
             class="col col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-12"
           >
             <div class="p-3">
               <div class="card">
-                <img src="../img/hpTrois.jpg" class="card-img-top" alt="..." />
+                <img src="../img/empire.png" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <a href="#" class="btn btn-primary">Voir plus</a>
+                  <a href="gladiadetail.html" class="btn btn-primary">Voir plus</a>
                 </div>
               </div>
             </div>
@@ -135,14 +131,14 @@
           <!--fin col-->
           <!--col-->
           <div
-            data-aos="fade-up"
+            data-aos="zoom-in"
             class="col col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-12"
           >
             <div class="p-3">
               <div class="card">
-                <img src="../img/hobbit.jpg" class="card-img-top" alt="..." />
+                <img src="../img/dune.png" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <a href="#" class="btn btn-primary">Voir plus</a>
+                  <a href="gladiadetail.html" class="btn btn-primary">Voir plus</a>
                 </div>
               </div>
             </div>
@@ -150,16 +146,30 @@
           <!--fin col-->
         </div>
 
-        <h2 class="animate__animated animate__backInRight" id="action">Action</h2>
         <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
           <!--col-->
           <div
-                  data-aos="fade-up"
+                  data-aos="zoom-in"
                   class="col col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-12"
           >
             <div class="p-3">
               <div class="card">
-                <img src="../img/hp.jpg" class="card-img-top" alt="..." />
+                <img src="../img/avengers.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <a href="#" class="btn btn-primary">Voir plus</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--fin col-->
+          <!--col-->
+          <div
+                  data-aos="zoom-in"
+                  class="col col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-12"
+          >
+            <div class="p-3">
+              <div class="card">
+                <img src="../img/oss.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <a href="#" class="btn btn-primary">Voir plus</a>
                 </div>
@@ -174,7 +184,7 @@
           >
             <div class="p-3">
               <div class="card">
-                <img src="../img/hpDeux.jpg" class="card-img-top" alt="..." />
+                <img src="../img/hpdeux.jpg" class="card-img-top" alt="Image de Harry Potter 2" />
                 <div class="card-body">
                   <a href="#" class="btn btn-primary">Voir plus</a>
                 </div>
@@ -182,40 +192,7 @@
             </div>
           </div>
           <!--fin col-->
-          <!--col-->
-          <div
-                  data-aos="fade-up"
-                  class="col col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-12"
-          >
-            <div class="p-3">
-              <div class="card">
-                <img src="../img/hpTrois.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <a href="#" class="btn btn-primary">Voir plus</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--fin col-->
-          <!--col-->
-          <div
-                  data-aos="fade-up"
-                  class="col col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-12"
-          >
-            <div class="p-3">
-              <div class="card">
-                <img src="../img/hobbit.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <a href="#" class="btn btn-primary">Voir plus</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--fin col-->
-        </div>
 
-        <h2 class="animate__animated animate__backInRight" id="horreur">Horreur</h2>
-        <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
           <!--col-->
           <div
                   data-aos="fade-up"
@@ -223,7 +200,7 @@
           >
             <div class="p-3">
               <div class="card">
-                <img src="../img/hp.jpg" class="card-img-top" alt="..." />
+                <img src="../img/hp.jpg" class="card-img-top" alt="affiche de Harry Potter 1" />
                 <div class="card-body">
                   <a href="#" class="btn btn-primary">Voir plus</a>
                 </div>
@@ -238,7 +215,7 @@
           >
             <div class="p-3">
               <div class="card">
-                <img src="../img/hpDeux.jpg" class="card-img-top" alt="..." />
+                <img src="../img/voyage-au-centre-de-la-terre.jpg" class="card-img-top" alt="affiche de voyage-au-centre-de-la-terre" />
                 <div class="card-body">
                   <a href="#" class="btn btn-primary">Voir plus</a>
                 </div>
@@ -253,7 +230,7 @@
           >
             <div class="p-3">
               <div class="card">
-                <img src="../img/hpTrois.jpg" class="card-img-top" alt="..." />
+                <img src="../img/vingt_mille_lieues_sous_les_mers.jpg" class="card-img-top" alt="affiche de vingt_mille_lieues_sous_les_mers" />
                 <div class="card-body">
                   <a href="#" class="btn btn-primary">Voir plus</a>
                 </div>
@@ -261,25 +238,8 @@
             </div>
           </div>
           <!--fin col-->
-          <!--col-->
-          <div
-                  data-aos="fade-up"
-                  class="col col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-12"
-          >
-            <div class="p-3">
-              <div class="card">
-                <img src="../img/hobbit.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <a href="#" class="btn btn-primary">Voir plus</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--fin col-->
-        </div>
 
-        <h2 class="animate__animated animate__backInRight" id="drole">Drôle</h2>
-        <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+
           <!--col-->
           <div
                   data-aos="fade-up"
@@ -287,7 +247,7 @@
           >
             <div class="p-3">
               <div class="card">
-                <img src="../img/hp.jpg" class="card-img-top" alt="..." />
+                <img src="../img/les-tontons-flingueurs.jpg" class="card-img-top" alt="affiche de les tonton flingeurs" />
                 <div class="card-body">
                   <a href="#" class="btn btn-primary">Voir plus</a>
                 </div>
@@ -302,7 +262,7 @@
           >
             <div class="p-3">
               <div class="card">
-                <img src="../img/hpDeux.jpg" class="card-img-top" alt="..." />
+                <img src="../img/la_grande_evasion.jpg" class="card-img-top" alt="affiche de la grande évasion" />
                 <div class="card-body">
                   <a href="#" class="btn btn-primary">Voir plus</a>
                 </div>
@@ -317,7 +277,7 @@
           >
             <div class="p-3">
               <div class="card">
-                <img src="../img/hpTrois.jpg" class="card-img-top" alt="..." />
+                <img src="../img/la-grande-vadrouille.jpg" class="card-img-top" alt="affiche de la-grande-vadrouille" />
                 <div class="card-body">
                   <a href="#" class="btn btn-primary">Voir plus</a>
                 </div>
@@ -332,7 +292,7 @@
           >
             <div class="p-3">
               <div class="card">
-                <img src="../img/hobbit.jpg" class="card-img-top" alt="..." />
+                <img src="../img/idiana-jones.jpg" class="card-img-top" alt=" Affiche de idiana jones" />
                 <div class="card-body">
                   <a href="#" class="btn btn-primary">Voir plus</a>
                 </div>
@@ -343,6 +303,74 @@
         </div>
       </div>
     </main>
+    <footer class="example-1">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h4>Contact :</h4>
+          <br />
+          <p>
+            <a
+                    target="_blank"
+                    class="hover-footer"
+                    href="mailto:email@example.com?subject=Enquiry&body=Hello, I have a question"
+            >Email
+            </a>
+          </p>
+          <p>
+            Numéro:
+            <a
+                    target="_blank"
+                    class="hover-footer" href="tel:+1234567890">06 90 65 22</a>
+          </p>
+          <p>
+            <a target="_blank"
+               class="hover-footer"
+               href="https://wa.me/1234567890?text=Hello,%20I%20have%20a%20question"
+            >Contact WhatsApp</a
+            >
+          </p>
+          <p>
+            <a
+                    target="_blank"
+                    class="hover-footer" href="https://fr-fr.facebook.com/"
+            >Réseau Facebook</a
+            >
+          </p>
+          <p>
+            <a
+                    target="_blank"
+                    class="hover-footer" href="https://www.instagram.com/"
+            >Réseau Instagram</a
+            >
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Sitemap :</h4>
+          <br />
+          <nav>
+            <ul>
+              <li>
+                <a class="hover-footer" href="../index.html">Page d'acceuil</a>
+              </li>
+              <br />
+              <li>
+                <a class="hover-footer" href="film.html">Liste des films</a>
+              </li>
+              <br />
+              <li>
+                <a class="hover-footer" href="genres.html">Genres de films</a>
+              </li>
+              <br />
+              <li><a class="hover-footer" href="nouveautes.html">Nouveautés</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="bottombar">
+        Copyright © 2024 CinéFlix. <a href="legales.html">mentions-legales</a>
+      </div>
+    </footer>
+    <!---------------------nooooooooooooooooooooooooooooooooooooooooooooooooooooooooon -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
